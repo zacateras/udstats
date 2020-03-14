@@ -1,0 +1,83 @@
+lang_tag	blex_max	system	blex_avg	blex_sd
+pl_lfg	90.42	TurkuNLP	72.81	16.96
+ru_syntagrus	88.65	TurkuNLP	68.57	18.07
+cs_pdt	87.91	HIT-SCIR	74.41	14.88
+cs_fictree	87.81	ICS PAS	71.10	16.26
+cs_cac	86.79	TurkuNLP	71.61	18.18
+hi_hdtb	86.74	HIT-SCIR	75.80	9.28
+pl_sz	86.29	TurkuNLP	67.33	17.15
+no_bokmaal	85.82	UDPipe Future	69.52	13.54
+ca_ancora	85.47	UDPipe Future	72.60	12.31
+es_ancora	84.92	HIT-SCIR	72.10	12.71
+it_isdt	84.76	ICS PAS	75.42	10.72
+fr_sequoia	84.67	ICS PAS	70.63	11.66
+no_nynorsk	84.44	TurkuNLP	67.43	14.10
+la_ittb	84.37	TurkuNLP	68.10	17.85
+bg_btb	84.31	TurkuNLP	68.13	15.02
+fro_srcmf	84.11	UDPipe Future	70.46	16.40
+sr_set	83.28	TurkuNLP	65.62	17.61
+sl_ssj	83.23	Stanford	62.54	17.20
+fi_ftb	82.44	TurkuNLP	59.66	16.50
+fi_pud	82.44	TurkuNLP	52.25	18.50
+sv_talbanken	81.44	TurkuNLP	66.45	13.18
+fi_tdt	81.24	TurkuNLP	54.70	17.25
+fr_gsd	81.18	HIT-SCIR	69.61	10.58
+ro_rrt	80.97	TurkuNLP	63.53	15.84
+sk_snk	80.74	TurkuNLP	58.35	15.07
+pt_bosque	80.62	TurkuNLP	68.71	11.27
+en_pud	80.53	LATTICE	64.73	10.88
+cs_pud	80.53	ICS PAS	64.62	16.03
+hr_set	80.50	TurkuNLP	64.64	17.13
+fa_seraji	80.44	Stanford	68.38	7.39
+el_gdt	80.09	TurkuNLP	63.26	15.60
+ko_kaist	79.55	TurkuNLP	57.32	20.78
+et_edt	79.37	TurkuNLP	57.06	16.14
+nl_alpino	79.15	HIT-SCIR	64.29	10.83
+en_ewt	78.44	HIT-SCIR	67.53	8.47
+uk_iu	78.38	TurkuNLP	57.78	15.95
+eu_bdt	78.15	TurkuNLP	60.52	15.24
+da_ddt	78.07	TurkuNLP	63.16	11.41
+sv_lines	77.01	ICS PAS	63.13	11.72
+id_gsd	76.56	Stanford	62.52	7.89
+nl_lassysmall	76.54	HIT-SCIR	60.92	11.93
+af_afribooms	76.44	TurkuNLP	63.87	9.62
+ko_gsd	76.31	TurkuNLP	54.13	17.78
+en_lines	75.29	HIT-SCIR	62.29	9.27
+gl_ctg	75.14	Stanford	60.86	10.82
+ur_udtb	73.79	TurkuNLP	62.93	6.42
+ja_gsd	73.79	HIT-SCIR	60.87	6.04
+en_gum	73.57	ICS PAS	61.02	8.59
+hu_szeged	73.17	TurkuNLP	55.42	10.95
+zh_gsd	72.97	HIT-SCIR	55.66	6.26
+lv_lvtb	72.40	TurkuNLP	53.42	14.56
+de_gsd	71.40	HIT-SCIR	54.86	14.99
+cu_proiel	71.31	Stanford	51.27	15.35
+ar_padt	70.06	Stanford	49.13	18.98
+it_postwita	69.34	HIT-SCIR	50.97	8.76
+grc_proiel	69.03	TurkuNLP	48.58	19.91
+la_proiel	67.60	TurkuNLP	51.03	14.56
+sv_pud	66.12	TurkuNLP	50.20	11.30
+fr_spoken	65.63	HIT-SCIR	52.57	7.29
+he_htb	65.04	Stanford	47.22	6.60
+ru_taiga	64.36	ICS PAS	39.32	10.49
+gl_treegal	64.29	UDPipe Future	49.38	8.18
+got_proiel	63.98	Stanford	48.79	13.77
+no_nynorsklia	60.98	ICS PAS	41.20	8.64
+tr_imst	60.13	TurkuNLP	45.39	10.38
+sme_giella	60.10	TurkuNLP	35.76	12.68
+grc_perseus	58.68	TurkuNLP	36.48	16.03
+ug_udt	55.42	HIT-SCIR	41.64	8.09
+ga_idt	55.18	TurkuNLP	37.83	7.61
+la_perseus	52.75	ICS PAS	30.16	11.05
+sl_sst	50.94	ICS PAS	37.20	6.87
+vi_vtb	44.02	Stanford	35.50	3.74
+pcm_nsc	26.04	CUNI x-ling	12.07	5.63
+hsb_ufal	21.09	LATTICE	11.26	4.97
+br_keb	20.70	TurkuNLP	4.19	4.93
+hy_armtdp	19.04	CUNI x-ling	10.68	4.37
+fo_oft	14.40	CUNI x-ling	7.32	3.33
+ja_modern	13.79	Stanford	7.70	2.86
+kmr_mg	13.66	LATTICE	8.44	3.11
+kk_ktb	11.33	CUNI x-ling	6.75	2.95
+th_pud	10.77	CUNI x-ling	0.91	2.11
+bxr_bdt	6.65	AntNLP	3.39	1.61
