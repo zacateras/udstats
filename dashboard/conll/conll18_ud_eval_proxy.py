@@ -268,8 +268,7 @@ def _just_load_conllu(file, is_path=True):
         assert os.path.exists(file)
         assert file.endswith('.conllu')
 
-        with open(file) as f:
-            return conll.load_conllu(f)
+        return conll.load_conllu_file(file)
 
     else:
         return conll.load_conllu(file)

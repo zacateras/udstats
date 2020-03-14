@@ -40,7 +40,7 @@ def flatten(input_conllu_directory, output_csv_file=None):
 
     treebanks = list(iterate_recursive(input_conllu_directory, r'.+\.conllu$'))
 
-    with open(output_csv_file, 'w+') as f:
+    with open(output_csv_file, 'w+', newline='\n', encoding='utf-8') as f:
         writer = csv.writer(f, delimiter='\t')
         writer.writerow([
             'lang',
