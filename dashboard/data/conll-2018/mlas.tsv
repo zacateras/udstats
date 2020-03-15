@@ -1,0 +1,83 @@
+lang_tag	mlas_max	system	mlas_avg	mlas_sd
+pl_lfg	86.93	UDPipe Future	73.73	7.29
+ru_syntagrus	86.76	UDPipe Future	71.63	9.36
+cs_pdt	85.10	UDPipe Future	73.61	6.32
+cs_fictree	84.23	ICS PAS	69.91	7.77
+ca_ancora	84.07	UDPipe Future	74.62	7.69
+es_ancora	83.93	Stanford	74.61	7.43
+it_isdt	83.89	Stanford	77.14	8.89
+fi_pud	83.78	Stanford	62.38	14.83
+no_bokmaal	83.68	UDPipe Future	70.75	8.92
+cs_cac	83.42	UDPipe Future	71.39	6.89
+bg_btb	83.12	UDPipe Future	73.18	7.15
+fr_sequoia	82.55	Stanford	70.42	9.04
+sl_ssj	82.38	Stanford	62.41	9.18
+no_nynorsk	81.86	UDPipe Future	68.62	9.45
+ko_kaist	81.29	HIT-SCIR	70.18	9.36
+ko_gsd	80.85	HIT-SCIR	63.73	16.02
+fi_tdt	80.84	Stanford	65.27	9.22
+fa_seraji	80.83	UDPipe Future	71.23	7.77
+pl_sz	80.77	Stanford	64.80	8.49
+fro_srcmf	80.28	UDPipe Future	65.19	16.58
+la_ittb	79.84	ICS PAS	67.77	8.37
+fi_ftb	79.65	TurkuNLP	66.11	8.86
+sv_talbanken	79.32	Stanford	68.05	8.49
+ro_rrt	78.68	TurkuNLP	67.43	7.24
+el_gdt	78.66	Stanford	64.29	8.28
+fr_gsd	78.44	Stanford	69.33	8.59
+hi_hdtb	78.30	UDPipe Future	68.48	5.88
+sr_set	77.73	UDPipe Future	67.33	5.96
+da_ddt	77.31	Stanford	65.00	6.89
+et_edt	76.97	TurkuNLP	63.59	8.34
+nl_alpino	76.52	Stanford	62.82	9.81
+en_ewt	76.33	Stanford	66.84	5.86
+pt_bosque	75.94	Stanford	66.22	6.76
+cs_pud	75.81	UDPipe Future	60.47	11.36
+af_afribooms	75.67	UDPipe Future	63.76	7.06
+sk_snk	75.01	Stanford	56.82	8.32
+en_pud	74.86	Stanford	63.05	7.89
+nl_lassysmall	74.11	Stanford	61.95	9.12
+hr_set	73.44	Stanford	60.08	7.07
+en_gum	73.24	ICS PAS	61.72	7.69
+ja_gsd	72.62	HIT-SCIR	59.52	6.20
+uk_iu	72.27	UDPipe Future	55.45	8.08
+en_lines	72.25	ICS PAS	62.35	8.04
+eu_bdt	71.73	UDPipe Future	58.49	8.62
+gl_ctg	70.92	Stanford	57.92	14.10
+ar_padt	68.54	Stanford	53.28	6.12
+it_postwita	68.50	Stanford	51.72	8.80
+id_gsd	68.36	Stanford	61.03	6.49
+lv_lvtb	67.89	Stanford	53.31	7.96
+hu_szeged	67.13	UDPipe Future	53.08	8.01
+zh_gsd	66.62	HIT-SCIR	50.42	5.87
+sv_lines	66.58	Stanford	57.40	7.43
+fr_spoken	64.67	HIT-SCIR	53.17	5.61
+he_htb	63.38	Stanford	45.22	4.94
+cu_proiel	63.31	Stanford	50.28	6.69
+ru_taiga	61.59	ICS PAS	37.16	7.53
+gl_treegal	60.63	UDPipe Future	47.35	5.93
+grc_proiel	60.27	Stanford	47.62	11.82
+la_proiel	59.36	Stanford	47.79	6.90
+de_gsd	58.04	TurkuNLP	39.13	10.35
+ur_udtb	57.98	TurkuNLP	49.64	4.21
+no_nynorsklia	57.51	ICS PAS	37.08	7.78
+sme_giella	57.47	TurkuNLP	38.29	12.37
+got_proiel	56.45	UDPipe Future	46.18	5.36
+tr_imst	55.73	Stanford	45.26	6.15
+grc_perseus	54.98	HIT-SCIR	35.65	12.31
+sv_pud	51.74	TurkuNLP	39.41	7.78
+la_perseus	49.77	ICS PAS	28.67	8.06
+vi_vtb	47.61	HIT-SCIR	32.45	7.28
+sl_sst	45.93	ICS PAS	33.12	5.33
+ga_idt	45.79	TurkuNLP	33.70	5.18
+ug_udt	45.78	UDPipe Future	35.08	5.96
+73. br keb 13.91 Uppsala 1.52 ± 3.34
+74. hy armtdp 13.36 CUNI x-ling 5.94 ± 2.92
+75. ja modern 11.82 Uppsala 6.45 ± 2.59
+76. hsb ufal 9.09 LATTICE 4.66 ± 2.37
+77. kk ktb 8.93 CUNI x-ling 5.04 ± 2.34
+78. kmr mg 7.98 IBM NY 4.01 ± 1.96
+79. th pud 6.29 CUNI x-ling 0.42 ± 1.27
+80. pcm nsc 5.30 KParse 3.00 ± 1.30
+81. bxr bdt 2.98 AntNLP 1.33 ± 0.72
+82. fo oft 1.07 CUNI x-ling 0.37 ± 0.21
