@@ -240,6 +240,10 @@ a:focus {
   font-size: 1.05rem;
   margin-right: 0.25rem;
 }
+.sidebar .nav-item .nav-link img {
+  max-width: 1.05rem;
+  margin-right: 0.10rem;
+}
 .sidebar .nav-item .nav-link span {
   font-size: 1.05rem;
   font-weight: 700;
