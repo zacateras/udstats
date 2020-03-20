@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png">
-    <link rel="manifest" href="~/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
-    <title>UDStats.site - visual statistics for Universal Dependencies</title>
+  <title>UDStats.site - visual statistics for Universal Dependencies</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
-            crossorigin="anonymous"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
-    
-    <link rel="stylesheet" href="~/css/site.css" />
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link href="css/site.css" rel="stylesheet">
 </head>
-<body>
 
-    <iframe class="pbi" src="https://app.powerbi.com/view?r=eyJrIjoiYmZiMjY5YjktM2VjMy00YTdmLTllOTEtYmExNWUyY2RjZDc2IiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>    
+<body id="page-top">
+  <div id="wrapper">
+    <div id="content-wrapper" class="d-flex">
+      <div id="content">
 
+        <iframe id="pbi-frame" src="https://app.powerbi.com/view?r=eyJrIjoiYmZiMjY5YjktM2VjMy00YTdmLTllOTEtYmExNWUyY2RjZDc2IiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>    
+
+      </div>
+    </div>
+
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVersions" aria-expanded="true" aria-controls="collapseVersions">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Change Version</span>
+        </a>
+        <div id="collapseVersions" class="collapse">
+          <div class="bg-white collapse-inner">
+            <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_5()">v2.5</a>
+            <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_4()">v2.4</a>
+            <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_3()">v2.3</a>
+            <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_2()">v2.2</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/zacateras/udstats">
+          <i class="fab fa-fw fa-github"></i>
+          <span>Fork on GitHub</span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <script>
+    function load(token) {
+      var iframe = document.getElementById('pbi-frame');
+      iframe.src = 'https://app.powerbi.com/view?r=' + token;
+    }
+
+    function v2_5() { load('eyJrIjoiYmZiMjY5YjktM2VjMy00YTdmLTllOTEtYmExNWUyY2RjZDc2IiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9') }
+    function v2_4() { load('eyJrIjoiODFmMGJiMTktNTBkOC00ZjE5LTk2N2ItYTcwN2FlZDc3MDAzIiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9') }
+    function v2_3() { load('eyJrIjoiNzI1ZjRiMmMtOTU4NS00NzQ5LTkzZmYtNGFmZTZmZDRmODY0IiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9') }
+    function v2_2() { load('eyJrIjoiNDgzZDhjOTgtMTIxZS00ZDE2LTk2OGMtYzhmNGY3NzBiOTZkIiwidCI6IjZjMjU1Y2MzLTM0NzAtNGNkNi05NGZjLWVmYTMyMjIwNjJkZCIsImMiOjl9') }
+  </script>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
