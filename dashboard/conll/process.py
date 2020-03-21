@@ -5,8 +5,6 @@ import urllib.request
 import tarfile
 from . import conll18_ud_eval_proxy as conll
 
-TMP_DIR = '.tmp'
-
 def iterate_recursive(directory, pattern):
     cmpl = re.compile(pattern)
     for root, dirs, files in os.walk(directory):

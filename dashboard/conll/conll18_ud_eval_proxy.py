@@ -253,7 +253,8 @@ def load_conllu(file, is_path=True, name=None, lang=None, tag=None, dataset_type
         if name is None:
             name = os.path.basename(file)
 
-            lang, tag = name.split('-')[0].split('_')
+            lang__tag = name.split('-')[0].split('_')
+            lang, tag = lang__tag if len(lang__tag) == 2 else (lang__tag[0], lang__tag[0])
             dataset_type = name.split('-')[2].split('.')[0]
 
     vocabs = vocab.from_UDRepresentation(UDR)

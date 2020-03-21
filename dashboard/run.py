@@ -11,20 +11,28 @@ ud_version_uri = {
     'v2.0': 'https://lindat.mff.cuni.cz/repository/xmlui/bitstream/handle/11234/1-1983/ud-treebanks-v2.0.tgz'
 }
 
+TMP_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '.tmp')
+
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         pass
+    elif len(sys.argv) == 2:
+        if not ud_version_uri[sys.argv[1]]:
+            print('Unknown or unsupported ud_version `%s`.' % sys.argv[1])
+            exit(-1)
+
+        ud_version_uri = { sys.argv[1]: ud_version_uri[sys.argv[1]] }
     elif len(sys.argv) == 3:
         ud_version_uri = { sys.argv[1]: sys.argv[2] }
     else:
-        print('Wrong number of arguments. Usage:\n$ python run.py [ud_version ud_url]')
+        print('Wrong number of arguments. Usage:\n$ python run.py [ud_version [ud_url]]')
         exit(-1)
 
-    if not os.path.exists(conll.process.TMP_DIR):
-        os.mkdir(conll.process.TMP_DIR)
+    if not os.path.exists(TMP_DIR):
+        os.mkdir(TMP_DIR)
 
-    print ('Working directory: %s' % conll.process.TMP_DIR)
-    os.chdir(conll.process.TMP_DIR)
+    print ('Working directory: %s.' % TMP_DIR)
+    os.chdir(TMP_DIR)
 
     for version, uri in ud_version_uri.items():
         print('Processing %s.' % version)
