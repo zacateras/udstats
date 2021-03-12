@@ -245,6 +245,8 @@ def load_conllu(file):
 
         # Handle multi-word tokens to save word(s)
         if "-" in columns[ID]:
+            continue # multi-word tokens do not work for new tb-s, however they are not taken into account while calculating dashboard stats
+
             try:
                 start, end = map(int, columns[ID].split("-"))
             except:
