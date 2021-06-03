@@ -22,7 +22,7 @@
     <div id="content-wrapper" class="d-flex">
       <div id="content">
 
-        <iframe id="pbi-frame" src="https://app.powerbi.com/view?r=eyJrIjoiYWZjZjFmMzktYTE4Yy00ZGI3LThkZTUtZGNjMDkxODE4ZTQwIiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>    
+        <iframe id="pbi-frame" src="https://app.powerbi.com/view?r=eyJrIjoiYmVjMTY3YjYtZTZlMC00NjU0LWE2YTUtMGQyNzIwZDQ5ODZjIiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>    
 
       </div>
     </div>
@@ -36,6 +36,7 @@
         </a>
         <div id="collapseVersions" class="collapse">
           <div class="bg-white collapse-inner">
+            <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_8()">v2.8</a>
             <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_7()">v2.7</a>
             <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_6()">v2.6</a>
             <a class="collapse-item" data-toggle="collapse" data-target="#collapseVersions" onclick="v2_5()">v2.5</a>
@@ -69,7 +70,7 @@
       var iframe = document.getElementById('pbi-frame');
       iframe.src = 'https://app.powerbi.com/view?r=' + token;
     }
-
+    function v2_8() { load('eyJrIjoiYmVjMTY3YjYtZTZlMC00NjU0LWE2YTUtMGQyNzIwZDQ5ODZjIiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9') }
     function v2_7() { load('eyJrIjoiYWZjZjFmMzktYTE4Yy00ZGI3LThkZTUtZGNjMDkxODE4ZTQwIiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9') }
     function v2_6() { load('eyJrIjoiZjQ3Zjc5MWEtNWU1Yi00OTA4LWJmYjgtODQ2MzVmYTU0ODE1IiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9') }
     function v2_5() { load('eyJrIjoiMjBkNTBmYjgtM2QwMC00ZWQyLWJmYzQtMmQwMTc1MWU5NzFmIiwidCI6Ijg2NzRhNjQ1LTFhZTAtNDAzYy05ZTEwLTQ2M2U5ODFlZjA5MyIsImMiOjl9') }
