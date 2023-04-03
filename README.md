@@ -1,4 +1,4 @@
-# udstats
+# [udstats](https://zacateras.github.io/udstats/)
 
 The collection of dashboards visualizing basic statistics of [Universal Dependencies](https://universaldependencies.org).
 
