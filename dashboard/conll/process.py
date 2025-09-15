@@ -3,6 +3,7 @@ import csv
 import re
 import urllib.request
 import tarfile
+import ssl
 from . import conll18_ud_eval_proxy as conll
 
 def iterate_recursive(directory, pattern):
@@ -16,7 +17,10 @@ def download(url, download_path='.'):
     file_name = url.split('/')[-1]
     file_path = os.path.join(download_path, file_name)
 
-    urllib.request.urlretrieve(url, file_path)
+    context = ssl._create_unverified_context()
+    with urllib.request.urlopen(url, context=context) as response, open(file_path, 'wb') as out_file:
+        data = response.read()
+        out_file.write(data)
 
     return file_path
 
